@@ -1,33 +1,21 @@
-# Website
+# Feeless docs sources
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/f8228a35-387f-46b6-9415-8816b7b34fdc/deploy-status)](https://app.netlify.com/sites/feeless/deploys)
+
+The actual documentation website: https://feeless.dev/
+
+The feeless repository: https://github.com/feeless/feeless/
 
 This website is built using [Docusaurus 2](https://v2.docusaurus.io/), a modern static website generator.
 
-## Installation
+## License
 
-```console
-yarn install
-```
+Licensed under either of these at your option:
 
-## Local Development
+* Apache License, Version 2.0 ([LICENSE-APACHE](LICENSE-APACHE) or http://www.apache.org/licenses/LICENSE-2.0)
+* MIT license ([LICENSE-MIT](LICENSE-MIT) or http://opensource.org/licenses/MIT)
 
-```console
-yarn start
-```
+## Contribution
 
-This command starts a local development server and open up a browser window. Most changes are reflected live without having to restart the server.
-
-## Build
-
-```console
-yarn build
-```
-
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
-
-## Deployment
-
-```console
-GIT_USER=<Your GitHub username> USE_SSH=true yarn deploy
-```
-
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+Unless you explicitly state otherwise, any contribution intentionally submitted for inclusion in the work by you, as
+defined in the Apache-2.0 license, shall be dual licensed as above, without any additional terms or conditions.
