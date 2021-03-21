@@ -14,7 +14,7 @@ const features = [
             <>
                 <p>Feeless is a command line tool which can work with wallets, keys, addresses.</p>
                 <ul>
-                    <li><a href="/docs/overview/introduction/">CLI features</a></li>
+                    <li><a href="/docs/#command-line-interface">CLI features</a></li>
                     <li><a href="/docs/overview/installation/">Installation</a></li>
                     {/*<li><a href="/docs/cli/examples/">Examples</a></li>*/}
                 </ul>

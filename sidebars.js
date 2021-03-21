@@ -5,6 +5,7 @@ module.exports = {
       label: 'Overview',
       items: [
         'overview/introduction',
+        'overview/what-is-nano',
         'overview/goals',
         'overview/installation',
       ],
