@@ -2,14 +2,23 @@ module.exports = {
   docs: [
     {
       type: 'category',
-      label: 'Docusaurus Tutorial',
+      label: 'Overview',
       items: [
-        'getting-started',
-        'create-a-page',
-        'create-a-document',
-        'create-a-blog-post',
-        'markdown-features',
-        'thank-you',
+        'overview/introduction',
+        'overview/goals',
+        'overview/installation',
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Command-line interface',
+      items: [
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Node',
+      items: [
       ],
     },
   ],

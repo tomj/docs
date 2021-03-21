@@ -12,27 +12,38 @@ const features = [
         imageUrl: 'img/undraw_docusaurus_react.svg',
         description: (
             <>
-                Feeless is also a command line tool which can work with wallets, keys, addresses.
+                <p>Feeless is a command line tool which can work with wallets, keys, addresses.</p>
+                <ul>
+                    <li><a href="docs/features/">CLI features</a></li>
+                    <li><a href="docs/installation/">Installation</a></li>
+                    <li><a href="docs/examples/">Examples</a></li>
+                </ul>
             </>
         ),
     },
     {
-        title: 'Rust Node (🚸 Work in progress! 🚸)',
-        imageUrl: 'img/undraw_docusaurus_mountain.svg',
-        description: (
-            <>
-                Feeless is planned to be a fully working Nano node.
-            </>
-        ),
-    },
-    {
-        title: 'Rust crate (library)',
+        title: 'Rust crate (programming library)',
         imageUrl: 'img/undraw_docusaurus_tree.svg',
         description: (
             <>
                 <p>Feeless is a Rust crate which developers can use to integrate with Nano.</p>
-                <p><a href="https://docs.rs/feeless">Crate docs</a> <a
-                    href="https://github.com/feeless/feeless">Repository</a></p>
+                <ul>
+                    <li><a href="https://docs.rs/feeless">Crate documentation</a></li>
+                    <li><a href="https://github.com/feeless/feeless">Source code</a></li>
+                </ul>
+            </>
+        ),
+    },
+    {
+        title: 'A Nano node (🚸 WIP 🚸)',
+        imageUrl: 'img/undraw_docusaurus_mountain.svg',
+        description: (
+            <>
+                <p>Feeless (is planned to be) a fully working Nano node. Initially not a voting node, it will contain a wallet and RPC compatible server.</p>
+                <ul>
+                    <li><a href="docs/node/goals">Node Goals</a></li>
+                    <li><a href="docs/node/features">Node features</a></li>
+                </ul>
             </>
         ),
     },
