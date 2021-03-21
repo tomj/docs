@@ -39,7 +39,8 @@ const features = [
         imageUrl: 'img/undraw_docusaurus_mountain.svg',
         description: (
             <>
-                <p>Feeless (is planned to be) a fully working Nano node. Initially not a voting node, it will contain a wallet and RPC compatible server.</p>
+                <p>Feeless (is planned to be) a fully working Nano node. Initially not a voting node, it will contain a
+                    wallet and RPC compatible server.</p>
                 {/*<ul>*/}
                 {/*    <li><a href="/docs/node/goals">Node Goals</a></li>*/}
                 {/*    <li><a href="/docs/node/features">Node features</a></li>*/}
@@ -59,7 +60,7 @@ function Feature({imageUrl, title, description}) {
                 </div>
             )}
             <h3>{title}</h3>
-            <p>{description}</p>
+            <div>{description}</div>
         </div>
     );
 }

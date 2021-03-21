@@ -6,12 +6,11 @@ module.exports = {
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/icon.svg',
   organizationName: 'feeless', // Usually your GitHub org/user name.
   projectName: 'feeless', // Usually your repo name.
   themeConfig: {
     navbar: {
-      title: 'Feeless',
       logo: {
         alt: 'Feeless',
         src: 'img/logo.svg',
