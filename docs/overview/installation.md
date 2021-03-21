@@ -8,7 +8,7 @@ called `cargo`. `cargo` is installed via `rustup`.
 
 1. Install <a href="https://rustup.rs/">rustup</a> (which installs `cargo`).
 2. Download or check out the <a href="https://github.com/feeless/feeless/">source code</a>.
-3. Go into the directory and run `cargo install --release`.
+3. Go into the directory and run `cargo install`.
 4. This will take a while to build, then will be installed in the <a
    href="http://web.mit.edu/rust-lang_v1.25/arch/amd64_ubuntu1404/share/doc/rust/html/book/second-edition/ch14-04-installing-binaries.html">rust binary path</a>.
 
