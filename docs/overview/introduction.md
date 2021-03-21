@@ -41,7 +41,7 @@ Feeless is a feature packed binary including a powerful command-line interface.
 
 Feeless can be used by developers as a Rust crate.
 
-* Please see the [Rust crate documentation](https://docs.rs/feeless/) for information.
+Please see the [Rust crate documentation](https://docs.rs/feeless/) for information.
 
 ### Nano node
 

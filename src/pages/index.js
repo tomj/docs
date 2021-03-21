@@ -14,9 +14,9 @@ const features = [
             <>
                 <p>Feeless is a command line tool which can work with wallets, keys, addresses.</p>
                 <ul>
-                    <li><a href="docs/features/">CLI features</a></li>
-                    <li><a href="docs/installation/">Installation</a></li>
-                    <li><a href="docs/examples/">Examples</a></li>
+                    <li><a href="/docs/overview/introduction/">CLI features</a></li>
+                    <li><a href="/docs/overview/installation/">Installation</a></li>
+                    {/*<li><a href="/docs/cli/examples/">Examples</a></li>*/}
                 </ul>
             </>
         ),
@@ -40,10 +40,10 @@ const features = [
         description: (
             <>
                 <p>Feeless (is planned to be) a fully working Nano node. Initially not a voting node, it will contain a wallet and RPC compatible server.</p>
-                <ul>
-                    <li><a href="docs/node/goals">Node Goals</a></li>
-                    <li><a href="docs/node/features">Node features</a></li>
-                </ul>
+                {/*<ul>*/}
+                {/*    <li><a href="/docs/node/goals">Node Goals</a></li>*/}
+                {/*    <li><a href="/docs/node/features">Node features</a></li>*/}
+                {/*</ul>*/}
             </>
         ),
     },
