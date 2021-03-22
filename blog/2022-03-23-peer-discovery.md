@@ -10,12 +10,12 @@ tags: []
 When a Nano node starts for the first time, it has to work out who to talk to. Nodes generally can be in flux so hard coding IP addresses is not the best idea.
 
 Recently [@gurghet](https://github.com/gurghet) added the [initial peering code](https://github.com/feeless/feeless/pull/15) which implements
-node discovery, similar to the official node, explained below.
+node discovery for the [Feeless node](https://feeless.dev/), similar to the official Nano node, explained below.
 
-Previously, the feeless node only accepted a single argument which was another node's IP address. I was using this to
-connect to the official Nano node running on my PC, by setting it to `localhost` when working on the feeless node implementation.
+Previously, the Feeless node only accepted a single argument which was another node's IP address. I was using this to
+connect to the official Nano node running on my PC, by setting it to `localhost` when working on the Feeless node implementation.
 
-The way Nano node discovery works in the official Nano implementation, and now in feeless, is via a domain called
+The way Nano node discovery works in the official Nano implementation, and now in Feeless, is via a domain called
 `peering.nano.org`. Presumably the domain is owned by the Nano Foundation.
 
 This domain resolves to multiple `A` records:
@@ -45,7 +45,7 @@ new initial nodes to their liking without having to create a new node release. T
 Once a node is connected to a peer, and an exchange of handshakes happen, the peer sends more peers to that node via the `Keepalive` message, seen below:
 
 ```commandline
-feeless.exe node -o 139.180.168.194:7075
+feeless node -o 139.180.168.194:7075
 
 Mar 23 09:48:43.999  INFO feeless::node: Spawning a channel to 139.180.168.194:7075
 Mar 23 09:48:44.029 DEBUG send_handshake:send: feeless::node::controller: OBJ Header { magic_number: 0x52, network: Live, version_max: V18, version_using: V18, version_min: V18, message_type: Handshake, ext: [Query] }
