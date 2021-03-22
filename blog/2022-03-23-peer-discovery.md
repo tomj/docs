@@ -7,12 +7,16 @@ author_image_url: https://avatars0.githubusercontent.com/u/31338?s=400&v=4
 tags: []
 ---
 
-Recently [@gurghet](https://github.com/gurghet) added the [initial peering code](https://github.com/feeless/feeless/pull/15)
-(explained below), which previously was a single node
-you had to enter in. I was setting it to `localhost` initially when working on the node implementation.
+When a Nano node starts for the first time, it has to work out who to talk to. Nodes generally can be in flux so hard coding IP addresses is not the best idea.
 
-When a Nano node spins up for the first time, it has to work out which peers it connects to. Fortunately there's a domain
-nodes look up for the first time called `peering.nano.org`. Presumably the domain is owned by the Nano Foundation.
+Recently [@gurghet](https://github.com/gurghet) added the [initial peering code](https://github.com/feeless/feeless/pull/15) which implements
+node discovery, similar to the official node, explained below.
+
+Previously, the feeless node only accepted a single argument which was another node's IP address. I was using this to
+connect to the official Nano node running on my PC, by setting it to `localhost` when working on the feeless node implementation.
+
+The way Nano node discovery works in the official Nano implementation, and now in feeless, is via a domain called
+`peering.nano.org`. Presumably the domain is owned by the Nano Foundation.
 
 This domain resolves to multiple `A` records:
 
@@ -30,7 +34,7 @@ peering.nano.org.       0       IN      A       139.180.168.194
 Each one of these are a Nano node. Looking into these IP addresses, they belong to several different ISPs: Digital Ocean, Hetzner, Linode, CloudSigma, netcup and Choopa.
 On top of that they are located all around the world: India, Finland, United States, Switzerland, Netherlands, Japan, Germany and Australia.
 
-I'm guessing these are nodes controlled by NF, or it could just be hand picked principal representatives, etc.
+I'm guessing these are nodes controlled by the Nano Foundation, or it could just be hand picked principal representatives, etc.
 
 It looks very well distributed for new nodes to start with. If there's a problem with any of these cloud providers or
 country's Internet, a node can easily still start synchronizing with the other nodes.
