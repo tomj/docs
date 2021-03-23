@@ -20,11 +20,5 @@ module.exports = {
         'cli/pcap',
       ],
     },
-    {
-      type: 'category',
-      label: 'Node',
-      items: [
-      ],
-    },
   ],
 };

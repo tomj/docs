@@ -1,6 +1,6 @@
 ---
 title: Overview
-slug: /cli
+slug: /cli/overview
 ---
 
 ## Overview
@@ -28,7 +28,7 @@ See the [Installation](/docs/overview/installation) on how to install the Feeles
 
 ## Logging  
 
-To enable debug logging, you can set the RUST_LOG environment variable:
+To enable debug logging, you can set the `RUST_LOG` environment variable:
 
 ```commandline
 export RUST_LOG=feeless=debug
