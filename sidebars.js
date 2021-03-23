@@ -14,6 +14,9 @@ module.exports = {
       type: 'category',
       label: 'Command-line interface',
       items: [
+        'cli/overview',
+        'cli/usage',
+        'cli/wallet',
       ],
     },
     {
