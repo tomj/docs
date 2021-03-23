@@ -34,7 +34,7 @@ motivation to complete this project 🤐.
 Feeless is a feature packed binary including a powerful command-line interface.
 
 * Manipulate/generate seeds, keys, addresses.
-* Convert between rai units, e.g. Nano to MicroNano. 
+* Convert between rai units, e.g. nano to micronano. 
 * A wallet that supports private keys, seeds and mnemonic phrases.
 * Decode and print network capture (pcapng) files.
 * RPC client. (WIP)
