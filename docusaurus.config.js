@@ -14,7 +14,6 @@ module.exports = {
       logo: {
         alt: 'Feeless',
         src: 'img/icon.svg',
-        title: 'Feeless',
       },
       items: [
         {
