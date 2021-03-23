@@ -1,6 +1,6 @@
 ---
-title: Usage
-slug: /cli/usage
+title: Example usage
+slug: /cli/examples
 ---
 
 ## Help

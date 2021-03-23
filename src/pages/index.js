@@ -16,7 +16,7 @@ const features = [
                 <ul>
                     <li><a href="/docs/#command-line-interface">CLI features</a></li>
                     <li><a href="/docs/overview/installation/">Installation</a></li>
-                    {/*<li><a href="/docs/cli/examples/">Examples</a></li>*/}
+                    <li><a href="/docs/cli/examples/">Examples</a></li>
                 </ul>
             </>
         ),

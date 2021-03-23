@@ -15,7 +15,7 @@ module.exports = {
       label: 'Command-line interface',
       items: [
         'cli/overview',
-        'cli/usage',
+        'cli/examples',
         'cli/wallet',
         'cli/pcap',
       ],
