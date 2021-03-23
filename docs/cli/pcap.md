@@ -1,5 +1,5 @@
 ---
-title: Packet Capture
+title: Packet capture
 slug: /cli/packet-capture
 ---
 
