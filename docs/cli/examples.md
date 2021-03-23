@@ -17,7 +17,7 @@ USAGE:
 
 FLAGS:
     -h, --help        Prints help information
-        --no-color    Don't use ANSI colour codes when logging
+        --no-color    Don't use ANSI color codes when logging
     -V, --version     Prints version information
 
 SUBCOMMANDS:
