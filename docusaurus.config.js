@@ -75,9 +75,6 @@ module.exports = {
       ],
       copyright: `Sources and content licenced under MIT or Apache 2.0.`,
     },
-    googleAnalytics: {
-      trackingID: 'G-PJGJEMBFQP',
-    },
     gtag: {
       trackingID: 'G-PJGJEMBFQP',
     }
