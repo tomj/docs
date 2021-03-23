@@ -13,7 +13,8 @@ module.exports = {
     navbar: {
       logo: {
         alt: 'Feeless',
-        src: 'img/logo.svg',
+        src: 'img/icon.svg',
+        title: 'Feeless',
       },
       items: [
         {
