@@ -78,6 +78,9 @@ module.exports = {
     googleAnalytics: {
       trackingID: 'G-PJGJEMBFQP',
     },
+    gtag: {
+      trackingID: 'G-PJGJEMBFQP',
+    }
   },
   presets: [
     [
