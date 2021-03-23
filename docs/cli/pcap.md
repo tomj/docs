@@ -41,11 +41,11 @@ In order to capture packets, I've been using [Wireshark](https://www.wireshark.o
 ![Wireshark screenshot capturing Nano packets](wireshark-screenshot-nano-capture.png)
 
 3. Once happy with the data collected, you can optionally stop the stream.
-4. You will need to export as a `pngng` file. The best results I've found is to only export the Nano specific packets like so: `File -> Export Specified Packets`, make sure `Displayed` is selected:
+4. You will need to export as a `pcapng` file. The best results I've found is to only export the Nano specific packets like so: `File -> Export Specified Packets`, make sure `Displayed` is selected:
 
 ![Export specified displayed packets](wireshark-export-displayed-packets.png)
 
-5. Once saved, you should end up with a `pcapng` file you can use with Feeless with [logging](/docs/cli/overview.md#logging) on:
+5. Once saved, you should end up with a `pcapng` file you can use with Feeless with [logging](/docs/cli/overview#logging) on:
 
 ```commandline
 > RUST_LOG=debug feeless pcap mycapture.pcapng

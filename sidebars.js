@@ -17,6 +17,7 @@ module.exports = {
         'cli/overview',
         'cli/usage',
         'cli/wallet',
+        'cli/pcap',
       ],
     },
     {
