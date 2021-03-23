@@ -7,7 +7,7 @@ slug: /cli/examples
 
 Help output shows all the main commands. 
 
-```
+```asm
 > feeless --help
 
 A Nano (cryptocurrency) node and utilities such as nano addresses, hashing blocks, signing, etc.
@@ -36,7 +36,7 @@ SUBCOMMANDS:
 
 You can see extra help for each command:
 
-```
+```asm
 > feeless wallet --help
 
 Manage wallet files
@@ -61,7 +61,7 @@ SUBCOMMANDS:
 
 You can generate new seeds, phrases and private keys:
 
-```
+```bash
 > feeless phrase new --language ja --words 12
 たおす むろん だじゃれ のせる よさん ておくれ こあくま しゅくはく たいき りりく しゃりん ひだり
 
@@ -76,7 +76,7 @@ BA6481E2F4143C99F47EFA540E5E2DCCA1D265519CD15E7A031380CB01298165
 
 Convert between seeds, private, public and addresses.
 
-```
+```bash
 > feeless private to-public DC44DE34F003F3F4F44ED0557BEE848128E7DF8CB6095DD554F271DFE173BDC6
 10527826C408322E511DF03953FA5A509858CE46B137C3483BAA8E632E0A0168
 
@@ -106,8 +106,7 @@ See the PR and discussion around this:
 * https://github.com/nanocurrency/nano-docs/pull/466
 * https://forum.nano.org/t/discussion-regarding-unit-names/108
 
-```
-
+```bash
 > feeless unit rai nano 12345
 0.000000000000000000000000012345
 
@@ -124,7 +123,7 @@ See the PR and discussion around this:
 
 See the [wallet](/docs/cli/wallet) section for more details.
 
-```
+```bash
 > feeless wallet new seed --file gak.wallet
 2B2B95123A375400F5D29EA03F180884D073B4D5DE06EF7D4674DF7E7DD1382A
 

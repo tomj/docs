@@ -27,7 +27,7 @@ Feeless wallets support two environment variables to save typing out the same ar
 
 For example, these two commands are equivalent:
 
-```commandline
+```bash
 > feeless wallet address --file gak.wallet --id 2B2B95123A375400F5D29EA03F180884D073B4D5DE06EF7D4674DF7E7DD1382A
 nano_16pypp9o33xd4be8pjcjaneq5sicz7s857n51wc7h8w6s3p5tkihc5jsp6o8
 
@@ -43,7 +43,7 @@ nano_16pypp9o33xd4be8pjcjaneq5sicz7s857n51wc7h8w6s3p5tkihc5jsp6o8
 
 A wallet file can contain multiple wallets, represented by a **wallet ID** which is a hex string:
 
-```commandline
+```bash
 > export FEELESS_WALLET_FILE=gak.wallet
 > feeless wallet new seed
 4C1C205DE15BAF6376AA5C6849E3083F2C59B0B8BE728229EE1B654DDEBE194C
@@ -55,7 +55,7 @@ Wallet IDs are not the private key or seed, these are just an identifier for the
 
 If you only need to work with one wallet, you can use a default wallet which is just a zero value.
 
-```commandline
+```bash
 > export FEELESS_WALLET_FILE=gak.wallet
 > feeless wallet new seed --default
 0000000000000000000000000000000000000000000000000000000000000000
@@ -65,7 +65,7 @@ Please note that if a wallet ID already exists, it can't be created again.
 
 When you don't specify the wallet ID in further commands, it will assume the default key.
 
-```commandline
+```bash
 > feeless wallet address
 nano_16pypp9o33xd4be8pjcjaneq5sicz7s857n51wc7h8w6s3p5tkihc5jsp6o8
 ```

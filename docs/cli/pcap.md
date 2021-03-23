@@ -7,7 +7,7 @@ Feeless has the ability to process a network packet capture of a Nano node to in
 
 To do this the command-line interface has a command called `pcap`:
 
-```commandline
+```asm
 > feeless pcap --help
 
 Tool to analyse network capture dumps for Nano packets
@@ -47,7 +47,7 @@ In order to capture packets, I've been using [Wireshark](https://www.wireshark.o
 
 5. Once saved, you should end up with a `pcapng` file you can use with Feeless with [logging](/docs/cli/overview#logging) on:
 
-```commandline
+```bash
 > RUST_LOG=debug feeless pcap mycapture.pcapng
 
 Mar 23 16:07:56.348  INFO feeless::pcap: Loading dump: .\bootstrap.pcapng

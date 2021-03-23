@@ -9,7 +9,7 @@ Feeless is a feature packed binary including a powerful command-line interface.
 
 A few examples:
 
-```commandline
+```bash
 > feeless wallet new seed --file gak.wallet
 2B2B95123A375400F5D29EA03F180884D073B4D5DE06EF7D4674DF7E7DD1382A
 
