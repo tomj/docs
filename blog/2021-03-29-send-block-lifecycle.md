@@ -114,7 +114,7 @@ void publish (nano::publish const & message_a) override
 ```
 where `process_active` adds the block inside the message to both the `block_arrival` and the `block_processor`. The latter is responsible for putting the block into the `block` dequeue.
 ### Block processing
-Whenever a `node` class is instanciated it spawns a block processor thread. This thread has an infinite loop in `blockprocessor.cpp` inside the function `process_blocks`. This starts a transaction that, after acquiring various locks, processes a batch of blocks. The processing of a single block is defined in the `process_one` function and relies on a `ledger_processor` defined in `ledger.cpp`, at least for the send block we're interested in.
+Whenever a `node` class is instantiated it spawns a block processor thread. This thread has an infinite loop in `blockprocessor.cpp` inside the function `process_blocks`. This starts a transaction that, after acquiring various locks, processes a batch of blocks. The processing of a single block is defined in the `process_one` function and relies on a `ledger_processor` defined in `ledger.cpp`, at least for the send block we're interested in.
 
 The full logic can be found in `ledger.cpp` in the `send_block` function. At its core it's a pyramid of ifs which try to account for all possible things that might go wrong. For example if the work of of the block is sufficient (note that we already checked this when we received the block from another node).
 
