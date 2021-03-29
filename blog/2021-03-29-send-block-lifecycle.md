@@ -15,7 +15,6 @@ I've spent some time looking at the Nano current reference implementation. The c
 ### Conception
 Since this piece will be about a send block, everything about creating a new chain is out of scope. Let's imagine a user wants to send some raws. My node will create a message with a header similar to this:
 ```
-...
 network: live
 protocol version: 19
 message type: publish
@@ -37,7 +36,7 @@ The node then will send this message to its peers.
 For each peer there is an already established TCP connection and after a message is processed a new message listener is created.
 This is how the listener is installed in `bootstrap_server.cpp:151`
 
-``` c++
+```c++
 void nano::bootstrap_server::receive ()
 {
     // ...
@@ -52,7 +51,7 @@ void nano::bootstrap_server::receive ()
 Which will put whatever we receive through the TCP connection into the `receive_buffer`.
 The function `receive_header_action` is immediately after and reads like this
 
-``` c++
+```c++
 void nano::bootstrap_server::receive_header_action (boost::system::error_code const & ec, size_t size_a)
 {
 	if (!ec)
@@ -75,7 +74,7 @@ void nano::bootstrap_server::receive_header_action (boost::system::error_code co
 ```
 
 What happens above is that the head of the `receive_buffer` is assigned to `type_stream` and `type_stream` is used to instanciate a `message_header` class. The logic in the constructor will deserialize the stream and, in particular, will fill the `header.type` attribute. This is because, provided no error happened, the next thing we do will depend on the `header.type` (the switch construct). Let's see the case for a publish message.
-``` c++
+```c++
 case nano::message_type::publish:
 {
 	socket->async_read (receive_buffer, header.payload_length_bytes (), [this_l, header](boost::system::error_code const & ec, size_t size_a) {
@@ -87,7 +86,7 @@ case nano::message_type::publish:
 It's installing another listener, on the same buffer. The handler will call the `receive_publish_action` function in the same file, which validates the work in the carried block. It then adds the message to the `requests` deque. This will be ultimately processed by the `request_response_visitor` which in turn puts the message into the `entries` deque of the `tcp_message_manager`.
 ### Processing message entries
 At this point the `network` class enters the stage. When initialized, this class runs the `process_messages` loop at `tcp.cpp:279`.
-``` c++
+```c++
 void nano::transport::tcp_channels::process_messages ()
 {
 	while (!stopped) // while we are not shutting down the node
@@ -101,7 +100,7 @@ void nano::transport::tcp_channels::process_messages ()
 }
 ```
 Internally the `process_message`, makes sure we have a channel open with the message originator. Then it creates a `network_message_visitor` relative to the channel and processes the publish message according to the following function in `network.cpp`:
-``` c++
+```c++
 void publish (nano::publish const & message_a) override
 {
 	// ... logging and monitoring logic ...
@@ -119,7 +118,7 @@ Whenever a `node` class is instantiated it spawns a block processor thread. This
 The full logic can be found in `ledger.cpp` in the `send_block` function. At its core it's a pyramid of ifs which try to account for all possible things that might go wrong. For example if the work of of the block is sufficient (note that we already checked this when we received the block from another node).
 
 At the top of the pyramid we finally execute the instruction
-``` c++
+```c++
 ledger.store.block_put (transaction, hash, block_a);
 ```
 
