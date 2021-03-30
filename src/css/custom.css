@@ -15,14 +15,33 @@
   --ifm-color-primary-lighter: #619FE5;
   --ifm-color-primary-lightest: #84B4EB;
   --ifm-code-font-size: 85%;
+  --ifm-navbar-background-color: transparent;
+  --ifm-hero-background-color: transparent;
+  --ifm-link-decoration: underline;
+  --ifm-button-font-weight: normal;
 }
 
 html[data-theme='light'] {
-  /*--ifm-background-surface-color: #F8F8FD;*/
 }
 
 html[data-theme='dark'] {
-  --ifm-color-primary: #619FE5;
-  --ifm-background-surface-color: #242526;
+  --ifm-background-surface-color: #070C1A;
+  --ifm-color-primary: #657385;
+  --ifm-heading-color: #FFFFFF;
+  --ifm-font-color-base: #9EA5B8;
+  --ifm-link-color: #FFFFFF;
+  --ifm-hero-text-color: #9EA5B8;
+  --ifm-button-color: #FFFFFF;
 }
 
+html[data-theme='dark'] img.dark {
+  display: inline;
+}
+
+html[data-theme='light'] img.light {
+  display: inline;
+}
+
+html[data-theme='dark'] .hero__subtitle {
+
+}

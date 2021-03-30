@@ -8,13 +8,15 @@ import styles from './styles.module.css';
 
 const features = [
     {
-        title: 'Command line tool',
-        imageUrl: 'img/undraw_docusaurus_react.svg',
+        title: 'Command line',
+        imageUrlDark: 'img/dark/cli.svg',
+        imageUrlLight: 'img/light/cli.svg',
         description: (
             <>
-                <p>Feeless is a command line tool which can work with wallets, keys, addresses.</p>
+                <p>Feeless is a command line tool which can work with wallets, keys, addresses, units. It also has a
+                    vanity address generator.</p>
                 <ul>
-                    <li><a href="/docs/#command-line-interface">CLI features</a></li>
+                    <li><a href="/docs/#command-line-interface">Features</a></li>
                     <li><a href="/docs/overview/installation/">Installation</a></li>
                     <li><a href="/docs/cli/examples/">Examples</a></li>
                 </ul>
@@ -22,8 +24,9 @@ const features = [
         ),
     },
     {
-        title: 'Rust crate (programming library)',
-        imageUrl: 'img/undraw_docusaurus_tree.svg',
+        title: 'Developers',
+        imageUrlDark: 'img/dark/rust.svg',
+        imageUrlLight: 'img/light/rust.svg',
         description: (
             <>
                 <p>Feeless is a Rust crate which developers can use to integrate with Nano.</p>
@@ -36,7 +39,8 @@ const features = [
     },
     {
         title: 'A Nano node (🚸 WIP 🚸)',
-        imageUrl: 'img/undraw_docusaurus_mountain.svg',
+        imageUrlDark: 'img/dark/node.svg',
+        imageUrlLight: 'img/light/node.svg',
         description: (
             <>
                 <p>Feeless (is planned to be) a fully working Nano node. Initially not a voting node, it will contain a
@@ -50,15 +54,15 @@ const features = [
     },
 ];
 
-function Feature({imageUrl, title, description}) {
-    const imgUrl = useBaseUrl(imageUrl);
+function Feature({imageUrlDark, imageUrlLight, title, description}) {
+    const imgUrlDark = useBaseUrl(imageUrlDark);
+    const imgUrlLight = useBaseUrl(imageUrlLight);
     return (
         <div className={clsx('col col--4', styles.feature)}>
-            {imgUrl && (
-                <div className="text--center">
-                    <img className={styles.featureImage} src={imgUrl} alt={title}/>
-                </div>
-            )}
+            <div className="text--center">
+                <img className={`${styles.featureImage} dark`} src={imgUrlDark} alt={title}/>
+                <img className={`${styles.featureImage} light`} src={imgUrlLight} alt={title}/>
+            </div>
             <h3>{title}</h3>
             <div>{description}</div>
         </div>
@@ -72,7 +76,7 @@ export default function Home() {
         <Layout
             title={`${siteConfig.title}`}
             description="Feeless is an implementation of Nano (cryptocurrency) in Rust.">
-            <header className={clsx('hero hero--secondary', styles.heroBanner)}>
+            <header className={clsx('hero', styles.heroBanner)}>
                 <div className="container">
                     <h1 className="hero__title">{siteConfig.title}</h1>
                     <p className="hero__subtitle">{siteConfig.tagline}</p>
