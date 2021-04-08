@@ -5,7 +5,13 @@ slug: /cli/wallet
 
 ## Introduction
 
-**WARNING**: There is no file locking currently, so two processes writing to it at the same time will cause unpredictable results.
+**WARNING**: 
+
+    :::danger The wallet is considered alpha software. Please don't use the wallet for any real Nano. It is not matured and may have bugs that can lose your funds, etc.
+
+    If you feel the need to, make sure you back up your seeds/phrase/private keys, not just the wallet file.
+
+    :::danger There is no file locking currently, so two processes writing to it at the same time will cause unpredictable results.
 
 A wallet file is a collection of wallets. Wallets are accessed using a [wallet ID](#specific-wallet-ids) or a [default wallet](#default-wallets).
 
