@@ -10,18 +10,24 @@ Help output shows all the main commands.
 ```asm
 > feeless --help
 
+feeless 0.1.12
 A Nano (cryptocurrency) node and utilities such as nano addresses, hashing blocks, signing, etc.
 
 USAGE:
-    feeless [FLAGS] <SUBCOMMAND>
+    feeless [FLAGS] [OPTIONS] <SUBCOMMAND>
 
 FLAGS:
     -h, --help        Prints help information
         --no-color    Don't use ANSI color codes when logging
     -V, --version     Prints version information
 
+OPTIONS:
+        --log-level <log-level>    Maximum level of logging to be displayed: trace, debug, info,
+                                   warn, error
+
 SUBCOMMANDS:
     address    Address conversion
+    call       Find a secret that can generate a custom vanity address
     debug      Debugging and experimental tools
     help       Prints this message or the help of the given subcommand(s)
     node       Launches a node
@@ -31,7 +37,10 @@ SUBCOMMANDS:
     public     Public key conversion
     seed       64 bit seed generation and conversion
     unit       Conversion between units, e.g. Rai to Nano
+    vanity     Find a secret that can generate a custom vanity address
+    verify     Verify Nano signed messages
     wallet     Manage wallet files
+    work       Find a secret that can generate a custom vanity address
 ```
 
 You can see extra help for each command:
@@ -50,11 +59,13 @@ FLAGS:
 
 SUBCOMMANDS:
     address    Output the address of a wallet
+    delete     Delete an existing wallet
     help       Prints this message or the help of the given subcommand(s)
     import     Import an existing wallet. If the wallet file doesn't exist, it will be created
     new        Create a new wallet. If the wallet file doesn't exist, it will be created
     private    Output the private key of a wallet
     public     Output the public address of a wallet
+    sign       Sign a message using a key in this wallet
 ```
 
 ## Generate new keys
