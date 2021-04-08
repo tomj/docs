@@ -3,8 +3,50 @@ title: Installation
 slug: /overview/installation
 ---
 
-Currently the only way to install the binary is using a <a href="https://www.rust-lang.org/">Rust</a> tool
-called `cargo`. `cargo` is installed via `rustup`.
+## Methods
+
+You can use/install feeless by:
+* Downloading and installing a binary.
+* Using the docker image.
+* Compiling from source.
+
+## Binary
+
+The latest release is on the project [Github page under releases](https://github.com/feeless/feeless/releases/).
+
+Download the one appropriate to your operating system and optionally place the binary in your system path.
+
+## Docker
+
+There is a [docker image](https://hub.docker.com/feeless/feeless) built for each release specified by the release
+version (e.g. `0.1.5`) or `latest` (by default) for the last release.
+
+You can access the cli directly, for example generating a new phrase:
+
+```shell
+> docker run feeless/feeless seed new --language ko
+교과서 도중 방울 김포공항 미인 부상 금연 상황 식료품 흥분 비율 유난히 차남 분홍색 본부 대낮 안내 평생 어젯밤 당연
+히 창고 과정 변화 그늘
+```
+
+Running a node in the background with a named instance and open ports, RPC to localhost only:
+```shell
+> docker run --name feeless -d -p 0.0.0.0:7075:7075 -p 127.0.0.1:7076:7076 feeless/feeless node
+```
+
+Then tail the logs:
+```shell
+> docker logs -f feeless
+```
+
+There is also an image released for every commit on the `main` branch for the latest alpha version.
+
+You can see a [list of docker builds here](https://hub.docker.com/feeless/feeless).
+
+## Source
+
+You can install the binary from source using a <a href="https://www.rust-lang.org/">Rust</a> tool called `cargo`.
+`cargo` is installed via `rustup`.
 
 1. Install <a href="https://rustup.rs/">rustup</a> (which installs `cargo`).
 2. Download or check out the <a href="https://github.com/feeless/feeless/">source code</a>.

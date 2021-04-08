@@ -41,7 +41,3 @@ html[data-theme='dark'] img.dark {
 html[data-theme='light'] img.light {
   display: inline;
 }
-
-html[data-theme='dark'] .hero__subtitle {
-
-}
