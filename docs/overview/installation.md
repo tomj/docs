@@ -18,7 +18,7 @@ Download the one appropriate to your operating system and optionally place the b
 
 ## Docker
 
-There is a [docker image](https://hub.docker.com/feeless/feeless) built for each release specified by the release
+There is a [docker image](https://hub.docker.com/r/feeless/feeless) built for each release specified by the release
 version (e.g. `0.1.5`) or `latest` (by default) for the last release.
 
 You can access the cli directly, for example generating a new phrase:
@@ -41,7 +41,7 @@ Then tail the logs:
 
 There is also an image released for every commit on the `main` branch for the latest alpha version.
 
-You can see a [list of docker builds here](https://hub.docker.com/feeless/feeless).
+You can see a [list of docker builds here](https://hub.docker.com/r/feeless/feeless).
 
 ## Source
 
