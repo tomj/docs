@@ -8,6 +8,7 @@ module.exports = {
         'overview/what-is-nano',
         'overview/goals',
         'overview/installation',
+        'overview/credits',
       ],
     },
     {

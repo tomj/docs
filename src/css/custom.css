@@ -41,3 +41,11 @@ html[data-theme='dark'] img.dark {
 html[data-theme='light'] img.light {
   display: inline;
 }
+
+.footer__copyright {
+  margin-top: 2rem;
+}
+
+[data-theme='light'] .footer__copyright a {
+  color: var(--ifm-color-primary-lightest);
+}
