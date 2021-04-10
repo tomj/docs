@@ -11,7 +11,7 @@ Many thanks to everyone that has helped with Feeless!
 * **Fiono11** - Contributor ([Github](https://github.com/Fiono11))
 * **Andrea Passaglia (gurghet)** - Contributor ([Github](https://github.com/gurghet))
 * **Sun Phil Kwon (fsw0422)** - Contributor ([Github](https://github.com/fsw0422))
-* **tomj** - Docs contributor ([Github](https://github.com/tomj))
+* **tomj** - Contributor ([Github](https://github.com/tomj))
 * **Jose (Jart)** - Website art and additional design ([Portfolio](https://jaaartdesigner.wordpress.com/))
 
 If you think you belong here, please create a pull request and let us know why we forgot you!
