@@ -73,7 +73,7 @@ module.exports = {
           ],
         },
       ],
-      copyright: `Sources and content licenced under MIT or Apache 2.0.<br><a href="/overview/credits/">Credits</a>`,
+      copyright: `Sources and content licenced under MIT or Apache 2.0.<br><a href="/docs/overview/credits/">Credits</a>`,
     },
     gtag: {
       trackingID: 'G-PJGJEMBFQP',
