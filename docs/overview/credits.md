@@ -28,12 +28,12 @@ Feel free to create a PR for your own links to Twitter, etc.
   * Nano Discord: https://chat.nano.org/
 * **Nano Docs** - General useful information:
   * https://docs.nano.org/
-* **Nanoo tools** - Helped me understand technical details on state blocks and hashing, and also with validating
+* **Nanoo tools** - Helped understand technical details on state blocks and hashing, and also with validating
   conversions between things:
   * https://nanoo.tools/
 * **Node protocol specification**:
   * https://github.com/nanocurrency/protocol/blob/master/reference
-* **Mnemonic Code Converter** - Helped me test out my BIP 39/BIP 44 implementations.
+* **Mnemonic Code Converter** - Helped test out BIP 39/BIP 44 implementations.
   * https://iancoleman.io/bip39/
 
 ## Other implementations
