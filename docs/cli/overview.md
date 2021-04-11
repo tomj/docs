@@ -3,7 +3,7 @@ title: Overview
 slug: /cli/overview
 ---
 
-## Overview
+## Quick Example
 
 Feeless is a feature packed binary including a powerful command-line interface.
 
