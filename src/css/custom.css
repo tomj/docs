@@ -22,10 +22,12 @@
 }
 
 html[data-theme='light'] {
+  --ifm-navbar-background-color: #FFFFFF;
 }
 
 html[data-theme='dark'] {
   --ifm-background-surface-color: #070C1A;
+  --ifm-navbar-background-color: #18191A;
   --ifm-color-primary: #657385;
   --ifm-heading-color: #FFFFFF;
   --ifm-font-color-base: #9EA5B8;
