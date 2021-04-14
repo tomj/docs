@@ -41,7 +41,7 @@ Then tail the logs:
 
 There is also an image released for every commit on the `main` branch for the latest alpha version.
 
-You can see a [list of docker builds here](https://hub.docker.com/r/feeless/feeless).
+You can see a [list of Docker tags here](https://hub.docker.com/r/feeless/feeless/tags).
 
 ## Source
 
