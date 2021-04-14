@@ -6,9 +6,11 @@ slug: /overview/installation
 ## Methods
 
 You can use/install feeless by:
-* Downloading and installing a binary.
-* Using the docker image.
-* Compiling from source.
+
+- [Downloading and installing a binary.](#binary)
+- [Installing via Homebrew (macOS).](#homebrew-macos)
+- [Using the Docker image.](#docker)
+- [Compiling from source.](#source)
 
 ## Binary
 
@@ -16,9 +18,19 @@ The latest release is on the project [Github page under releases](https://github
 
 Download the one appropriate to your operating system and optionally place the binary in your system path.
 
+## Homebrew (macOS)
+
+Install [Homebrew](https://brew.sh/) if you don't already have it, then:
+
+```shell
+> brew install feeless/brew/feeless
+```
+
+You can see [the Homebrew formula here](https://github.com/feeless/homebrew-brew).
+
 ## Docker
 
-There is a [docker image](https://hub.docker.com/r/feeless/feeless) built for each release specified by the release
+There is a [Docker image](https://hub.docker.com/r/feeless/feeless) built for each release specified by the release
 version (e.g. `0.1.5`) or `latest` (by default) for the last release.
 
 You can access the cli directly, for example generating a new phrase:
@@ -30,11 +42,13 @@ You can access the cli directly, for example generating a new phrase:
 ```
 
 Running a node in the background with a named instance and open ports, RPC to localhost only:
+
 ```shell
 > docker run --name feeless -d -p 0.0.0.0:7075:7075 -p 127.0.0.1:7076:7076 feeless/feeless node
 ```
 
 Then tail the logs:
+
 ```shell
 > docker logs -f feeless
 ```
